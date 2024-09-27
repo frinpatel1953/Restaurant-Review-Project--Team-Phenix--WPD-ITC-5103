@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reviews</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file -->
+    <style>
+        /* Basic styling for the page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        /* Set the background image */
+        .hero {
+            background-image: url(./public/banners/banner2.jpg); /* Add your image path here */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* Search bar */
+        .search-bar {
+            margin-top: 40px;
+        }
+        .search-bar input {
+            padding: 20px;
+            width: 500px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 20px 30px;
+            width: 150px;
+            border-radius: 25px;
+            border: none;
+            background-color: #f04e23;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* Navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Section styling */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .section-dark {
+            background-color: #f4f4f4;
+        }
+        .section-light {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Background Image and Search Bar -->
+    <div class="hero" id="home">
+        <h1>Welcome to Restaurant Reviews</h1>
+        <p>Find the best restaurants in your area!</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+
+    <!-- Section 1: About Us -->
+    <section class="section-light" id="about">
+        <h2>About Us</h2>
+        <p>We provide honest and unbiased restaurant reviews from real customers. Whether you're craving Italian, Indian, or anything in between, we've got you covered.</p>
+    </section>
+
+    <!-- Section 2: Popular Reviews -->
+    <section class="section-dark" id="reviews">
+        <h2>Popular Reviews</h2>
+        <p>Check out our latest reviews from top-rated restaurants across the city.</p>
+        <p>Our most popular reviews include a variety of cuisines that are guaranteed to make your mouth water.</p>
+    </section>
+
+    <!-- Section 3: Contact Us -->
+    <section class="section-light" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Feel free to reach out through our contact form, or email us at support@restaurantreviews.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Restaurant Reviews | Designed by Frin Patel</p>
+    </footer>
+
+</body>
+</html>
