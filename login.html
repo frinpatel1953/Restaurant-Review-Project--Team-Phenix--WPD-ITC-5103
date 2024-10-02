@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Login</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form action="#">
+                <div class="input-group">
+                    <div class="country-code">
+                        <img src="https://flagcdn.com/16x12/ca.png" alt="Canada Flag">
+                        <select id="country-code">
+                            <option value="+1">+1</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Phone" id="phone" required>
+                </div>
+                
+                <button type="submit" class="btn primary-btn">Send One Time Password</button>
+                
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                
+                <button class="btn email-btn">
+                    <span class="email-icon">📧</span> Continue with Email
+                </button>
+                
+                <div class="google-login">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Icon">
+                </div>
+            </form>
+
+            <p class="signup-text">New to <b>byte</b>? <a href="#">Create account</a></p>
+        </div>
+    </div>
+</body>
+</html>
