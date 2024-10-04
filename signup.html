@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <div class="signup-header">
+                <h2>Sign up</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to Zomato's <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a> and <a href="#">Content Policies</a></label>
+                </div>
+                <button type="submit" class="btn create-btn" disabled>Create account</button>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <div class="google-signin">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Icon">
+                </div>
+            </form>
+            <p class="login-text">Already have an account? <a href="./login.html">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
