@@ -180,6 +180,15 @@ body{
 	justify-content: center;
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    color: inherit;
+}
+
 .we_offer__cards{
 	border-radius: 20px;
 	overflow: hidden;
