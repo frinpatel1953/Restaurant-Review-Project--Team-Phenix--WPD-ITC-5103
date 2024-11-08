@@ -171,7 +171,7 @@ body{
 /* Cards section */
 
 .container_cards{
-	margin: 3rem auto;
+	margin: 3rem ;
 	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
@@ -446,11 +446,14 @@ body{
         padding: 2rem 0;
     }
     .container__get_the_App .semi_container{
-        width: 95%;
+        width: 100%;
         flex-direction: column;
     }
 	.container__get_the_App .semi_container .semi_container__left img{
 		height: 300px;
+	}
+	.container_cards{
+		align-items: center;
 	}
 }
 
@@ -458,7 +461,7 @@ body{
 
 .explore_places__container{
 	width: 90%;
-	margin: 3rem auto;
+	margin: 3rem;
 	
 }
 
