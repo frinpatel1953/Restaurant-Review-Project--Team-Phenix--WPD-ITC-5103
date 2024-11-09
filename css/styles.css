@@ -5,13 +5,13 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+
 body{
 	background: rgb(255,251,247);
 	margin-bottom: -32px;
 }
 
 /* Hero section */
-
 .hero__section{
 	background-image: url('../public/banners/banner2.jpg');
 	height: 400px;
@@ -23,11 +23,11 @@ body{
 .navbar{
 	position: static;
 	display: flex;
-	height: 40px;
+	height: 60px;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 80px;	
-	padding-right: 60px;
+	padding-left: 20px;	
+	padding-right: 20px;
 	font-size: 17px;
 }
 
@@ -46,15 +46,58 @@ body{
 	gap: 25px;
 }
 
-.navbar__menu_container .user_icon{
+.navbar__menu_container .search_icon{
 	display: flex;
 	height: 25px;
 	width: 25px;
-	border: 2px solid white;
 	border-radius: 50%;
 	align-items: center;
 	justify-content: center;
 	display: none;
+}
+
+.navbar__menu_container .search-input{
+	display: none;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.navbar__menu_container .check_btn{
+	display: flex;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+/* Drop down menubar */
+.navbar__dropdown_menu_container{
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	height: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	list-style: none;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: height .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navbar__dropdown_menu_container.open{
+	height: 350px;
+}
+
+.navbar__dropdown_menu_container li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -67,11 +110,11 @@ body{
 	height: calc(400px - 40px);
 }
 
+
 .hero__section_logo{
 	height: 116px;
     width: 388px;
 }
-
 
 .hero__section_heading{
 	color: white;
@@ -119,74 +162,17 @@ body{
 	width: 65%;
 }
 
-/* Media Queries for Hero Section */
-
-@media only screen and (max-width: 685px){
-	.navbar__menu_container .user_icon{
-		display: flex;
-	}
-	.link{
-		display: none;
-	}
-	.hero__section{
-		height: 300px;
-	}
-	.hero__section_container{
-        flex-direction: column;
-        background-color: transparent;
-        width: 100%;
-		height: calc(300px - 116px);
-    }
-	.hero__section_logo{
-		height: 60px;
-		width: 200px;
-		margin-top: 20px;
-	}
-    .input_container_location, .input_container_search{
-        padding: 18px;
-        border-radius: 10px;
-        width: 200px;
-    }
-    .hero__section_heading{
-        font-size: 18px;
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width: 400px){
-	.hero__section{
-		width: 119%
-	}
-	.hero__section_heading{
-		font-size: 18px;
-		word-spacing: 0px;
-		margin-left: 47px;
-	}
-	.hero__section_container{
-		width: 102%;
-		height: 69%;
-	}
-}
 
 /* Cards section */
 
 .container_cards{
-	margin: 3rem ;
+	margin: 20px auto  ;
 	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 15px;
 	align-items: center;
 	justify-content: center;
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.link:hover {
-    color: inherit;
 }
 
 .we_offer__cards{
@@ -222,11 +208,15 @@ body{
 	font-size: 12.5px;
 	font-weight: 400;	
 }
+ .we_offer__cards_content h2 a{
+	text-decoration: none;
+	color: black;
+ }
 
 /* Collections section */
 
 .container_collections{
-	margin: 3rem auto;
+	margin: 20px auto;
 	width: 90%;
 }
 
@@ -320,11 +310,11 @@ body{
 
 .container__get_the_App{
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	background: rgb(255,251,247);
 	width: 90%;
-	margin: 3rem auto;
+	margin: 20px auto;
+	justify-content: center;
 }
 
 .semi_container{
@@ -437,40 +427,12 @@ body{
 	width: 30%;
 }
 
-/* Media Queries for get App section */
-
-@media only screen and (max-width: 1300px){
-    .container__get_the_App .semi_container .semi_container__left,
-    .container__get_the_App .semi_container .semi_container__right{
-        flex: 1;
-    }
-
-    .container__get_the_App .semi_container{
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 900px){
-    .container__get_the_App{
-        padding: 2rem 0;
-    }
-    .container__get_the_App .semi_container{
-        width: 100%;
-        flex-direction: column;
-    }
-	.container__get_the_App .semi_container .semi_container__left img{
-		height: 300px;
-	}
-	.container_cards{
-		align-items: center;
-	}
-}
-
 /* This is for Explore places section */
 
 .explore_places__container{
 	width: 90%;
-	margin: 3rem;
+	margin: 20px auto;
+	justify-content: center;
 	
 }
 
@@ -495,23 +457,9 @@ body{
 
 .drop_down_menu{
 	height: 50px;
-	width: 1100px;
+	width: 100%;
 	border-radius: 10px;
 	padding: 15px;
-}
-
-/* Media Queries for explore section */
-
-@media only screen and (max-width: 900px){
-	.drop_down_menu{
-		width: 600px;
-	}
-}
-
-@media only screen and (max-width: 685px){
-	.drop_down_menu{
-		width: 400px;
-	}
 }
 
 /* This is for the footer section */
@@ -623,6 +571,138 @@ body{
     margin-top: auto;
 	border-top: 1px solid #C0C0C0;
 	padding-top: 20px;
+}
+
+/* Media Queries for Hero Section */
+
+@media only screen and (max-width: 793px){
+	.navbar__menu_container .search_icon{
+		display: flex;
+	}
+	.navbar__menu_container .check_btn{
+		display: flex;
+	}
+
+	.navbar__dropdown_menu_container {
+		display: block;
+	}
+	.navbar__menu_container .link{
+		display: none;
+	}
+
+	.search-input {
+        display: none; /* Initially hidden */
+        transition: width 0.3s ease;
+      }
+
+      .navbar__menu_container.active .search-input {
+        display: inline-block;
+        width: 150px;
+        opacity: 1;
+      }
+
+      /* Styling for search and menu icons */
+      .search_icon, .check_btn {
+        display: inline-block;
+        font-size: 20px;
+        color: #555;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+	  .search-input.visible {
+		display: inline-block;
+		width: 150px; /* Adjust width as desired */
+	  }
+
+
+	.hero__section{
+		height: 300px;
+	}
+	.hero__section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+		height: calc(300px - 116px);
+    }
+	.hero__section_logo{
+		height: 60px;
+		width: 200px;
+		margin-top: 20px;
+	}
+    .input_container_location, .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .hero__section_heading{
+        font-size: 18px;
+        width: 400px;
+    }
+
+	.hero__section_container_input{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.hero__section{
+		width: fit-content;
+	}
+	.hero__section_heading{
+		font-size: 18px;
+		word-spacing: 0px;
+		margin-left: 47px;
+	}
+	.hero__section_container{
+		width: 102%;
+		height: 69%;
+	}
+}
+
+/* Media Queries for get App section */
+
+@media only screen and (max-width: 1300px){
+
+
+    .container__get_the_App .semi_container .semi_container__left,
+    .container__get_the_App .semi_container .semi_container__right{
+        flex: 1;
+    }
+
+    .container__get_the_App .semi_container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .container__get_the_App{
+        padding: 2rem 0;
+    }
+    .container__get_the_App .semi_container{
+        width: 100%;
+        flex-direction: column;
+    }
+	.container__get_the_App .semi_container .semi_container__left img{
+		height: 300px;
+	}
+	.container_cards{
+		align-items: center;
+	}
+}
+
+/* Media Queries for explore section */
+
+@media only screen and (max-width: 900px){
+	.drop_down_menu{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 685px){
+	.drop_down_menu{
+		width: 100%;
+	}
 }
 
 /* Media queries for footer section */
