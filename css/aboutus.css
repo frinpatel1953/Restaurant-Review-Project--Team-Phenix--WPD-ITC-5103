@@ -1,0 +1,43 @@
+.about-section {
+    padding: 20px 0;
+}
+
+/* Make the image responsive */
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+/* Center and stack the items in the section */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text inside the section */
+    }
+
+    .about-section-vision {
+        display: flex;
+        flex-direction: column-reverse; /* Stack image above text */
+        align-items: center; /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+        width: 100%; /* Make sure the section takes full width */
+    }
+
+    /* Ensure the text and image are centered within their columns */
+    .about-section-vision .col-md-6 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-image{
+        align-items: center;
+    }
+}
