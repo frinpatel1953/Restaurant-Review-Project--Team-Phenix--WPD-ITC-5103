@@ -460,6 +460,13 @@ body {
     margin: 10px 0px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .top-brands,
+    .hero1 {
+        display: none; /* Hide these sections */
+    }
+}
+
 /* Media Query for screens smaller than 900px */
 @media only screen and (max-width: 900px) {
     .top-brands,
@@ -494,238 +501,132 @@ body {
     font-weight: 500;
 }
 
-.Food-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%; /* Adjust to fit more cards on the screen */
     margin: 0 auto;
-}
-
-.Food-menu {
-    max-width: 1100px;
-    height: 1600px;
-    margin: 0px auto;
-    padding-bottom: 40px;
-    /* background-color: yellow; */
-}
-
-.Food-menu .Food-item {
-    width: 350px;
-    height: 400px;
-    margin-right: 8px;
-    margin-bottom: 20px;
-    transition: 0.2s;
-    /* background-color: rebeccapurple; */
-}
-
-
-.Food-menu .Food-item .Food-item-margin {
-    padding: 10px;
-}
-
-.Food-menu .Food-item .Food-item-margin a {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.Food-menu .Food-item .Food-item-margin a .card-img {
-    border-radius: 1.5px;
-    cursor: pointer;
-    position: relative;
-    max-width: 100%;
-    width: 328.4px;
-    height: 248px;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .card-img img {
+    padding-top: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 10px 10px 40px 2px rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+    width: 100%; /* Adjust to fit within grid columns */
+  }
+  
+  .card .card-media {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
     width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    object-fit: cover;
-    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
-}
-
-.Food-menu .Food-item .Food-item-margin a .off {
+    object-fit: fit;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  .card .card-media .discount {
+    font-size: 12px;
+    background-color: #3582ec;
     position: absolute;
-    bottom: 12px;
-    max-width: calc(100% - 24px);
-}
-
-.Food-menu .Food-item .Food-item-margin a .off p {
-    font-size: 14px;
-    line-height: 18px;
-    padding: 0px 6px;
-    background: rgb(37, 111, 239);
-    color: rgb(255, 255, 255);
+    bottom: 21%;
+    padding: 2px 5px 2px 20px;
+    border-radius: 0 4px 4px 0;
+    max-width: 60px;
+    left: 0;
+    color: #fff;
+    font-weight: 700;
+  }
+  .card .card-media .discount p {
     font-weight: 400;
-    width: max-content;
-    border-radius: 0px 2px 2px 0px;
-    max-width: 100%;
-    margin-bottom: 0px;
-
-}
-
-.Food-menu .Food-item .Food-item-margin a .pname {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .pname h4 {
-    line-height: 1.2;
-    margin-block-end: 0px;
-    font-weight: 500;
-    text-align: left;
-    font-size: 17px;
-    margin: 8px 0px 6px;
-    max-width: 80%;
-    color: rgb(28, 28, 28);
-}
-
-.Food-menu .Food-item .Food-item-margin a .rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(36, 150, 63);
-    background-color: rgb(36, 150, 63);
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    border-radius: 6px;
-    height: 20px;
-    width: 40px;
-    margin: 7.2px 0;
-}
-
-.Food-menu .Food-item .Food-item-margin a .rating p {
-    margin-right: 2px;
-    font-weight: 600;
-    font-size: 13px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .rating .fa-star {
-    color: #ffffff;
-    font-size: 10px;
-    height: 9px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .Category {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .Category .p1 {
-    font-size: inherit;
-    line-height: 1.5;
-    margin: 0px;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: rgb(105, 105, 105);
-    max-width: 56%;
-    padding: 0px 0px 4px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .Category .p2 {
-    font-size: inherit;
-    line-height: 1.5;
-    margin: 0px;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: rgb(105, 105, 105);
-    max-width: 60%;
-    padding: 0px 0px 4px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .time {
-    display: flex;
-    justify-content: end;
-    height: 21px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .time p {
-    margin: 0px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(4px);
+  }
+  .card .card-media .pro-discount {
+    font-size: 12px;
+    background-color: #e83940;
+    position: absolute;
+    bottom: 6%;
+    padding: 3px 5px;
+    border-radius: 0 4px 4px 0;
+    max-width: 110px;
+    left: 0;
+    color: #fff;
+  }
+  .card .card-media .delivery-time {
+    position: absolute;
+    background-color: #f5f5f5;
+    max-width: 60px;
+    padding: 3px 6px;
+    font-size: 12px;
+    right: 3%;
+    bottom: 6%;
     border-radius: 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    color: rgb(54, 54, 54);
-    padding: 2px 5px 3px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .line {
-    height: 1px;
-    background-color: rgb(232, 232, 232);
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.Food-menu .Food-item .Food-item-margin a .covid {
+  }
+  .card .card-description {
+    padding: 10px;
+  }
+  .card .card-description .about-place {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    height: 34px;
+  }
+  .card .card-description .about-place .place-name {
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .card .card-description .about-place .place-speciality, .card .card-description .about-place .per-person {
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.97);
+  }
+  .card .card-description .about-place .rating {
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #0a6d0acc;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 2px 0;
+    margin-bottom: 6px;
+    margin-left: 30px;
+  }
+
+
+  @media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
 }
 
-.Food-menu .Food-item .Food-item-margin a .covid .covid-img {
-    width: 63px;
-    height: 18px;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }
 
-.Food-menu .Food-item .Food-item-margin a .covid .covid-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media (max-width: 600px) {
+    .card .card-media {
+        height: 150px;
+    }
+
+    .card .card-description .about-place .place-name {
+        font-size: 16px;
+    }
+
+    .card .card-description .about-place .place-speciality,
+    .card .card-description .about-place .per-person {
+        font-size: 12px;
+    }
+
+    .card .card-media .discount, 
+    .card .card-media .pro-discount, 
+    .card .card-media .delivery-time {
+        font-size: 10px;
+    }
 }
-
-.Food-menu .Food-item .Food-item-margin a .covid p {
-    margin: 0px 0px 0px 11px;
-    text-align: left;
-    color: rgb(130, 130, 130);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-}
-
-.Food-menu .Food-card {
-    display: flex;
-    width: 100%;
-    margin: 45px 0px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-
- @media only screen and (max-width: 900px){
-	.Food-menu .Food-card{
-		width: 500px    ;
-        display: flex;
-	}
-} 
-
-@media only screen and (max-width: 685px){
-	.Food-menu .Food-card{
-		width: 400px;
-        display: flex;
-	}
-} 
 
 /* FAQ */
 
@@ -763,10 +664,24 @@ body {
 }
 
 /* Media Queries for explore section */
+@media only screen and (min-width: 900px){
+    .address{
+        margin-top: 40px;
+    }
+	.explore_places__container .sub_container{
+        margin-top: 100px;
+    }
+	.drop_down_menu{
+		width: 370px;
+	}
+}
 
 @media only screen and (max-width: 900px){
+    .address{
+        margin-top: 40px;
+    }
 	.explore_places__container .sub_container{
-        margin-top: 3500px;
+        margin-top: 100px;
     }
 	.drop_down_menu{
 		width: 370px;
@@ -775,7 +690,7 @@ body {
 
 @media only screen and (max-width: 685px){
     .explore_places__container .sub_container{
-        margin-top: 3500px;
+        margin-top: 100px;
     }
 	.drop_down_menu{
 		width: 370px;
@@ -894,6 +809,12 @@ body {
 }
 
 /* Media queries for footer section */
+
+@media only screen and (max-width: 1024px){
+    .navigation_container{
+		grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @media only screen and (max-width: 900px){
     .navigation_container{
