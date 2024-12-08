@@ -11,7 +11,6 @@ body {
 
 .navbar {
     height: 72px;
-    background-color: white;
     width: 100%;
     display: flex;
     align-items: center;
@@ -673,7 +672,7 @@ body {
         margin-top: 100px;
     }
 	.drop_down_menu{
-		width: 370px;
+		width: 100%;
 	}
 }
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delish</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/explore.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -15,34 +16,52 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
-            </div>
-
-            <div class="nav-search">
-                <div class="add-bar">
-                    <i class="fa-solid fa-location-dot" style="color: #ff828b;"></i>
-                    <input type="text" class="input-add" placeholder="Toronto">
-                    <i class="fa-solid fa-sort-down" style="color: #505050;"></i>
-                </div>
-                <div class="line">
-
-                </div>
-                <div class="search-food">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #939393;"></i>
-                    </div>
-                    <input type="text" class="input-food" placeholder="Search for restaurant, cuisine or a dish ">
-                </div>
-            </div>
-            <div class="user-login">
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
-            </div>
-        </div>
-    </header>
+  <section class="hero__section">
+		<header>
+			<nav class="navbar">
+				<a href="#">Get the App</a>
+				<div class="navbar__menu_container">
+					<a href="index.html" class="link">Home</a>
+					<a href="aboutus.html" class="link">About</a>
+					<a href="#" class="link">Reviews</a>
+					<a href="addrestaurant.html" class="link">Add Restaurants</a>
+					<a href="blog.html" class="link">Blog</a>
+					<a href="login.html" class="link">Login</a>
+					<a href="./signup.html" class="link">Sign Up</a>
+					<input type="text" class="search-input" placeholder="Search...">
+					<a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+					<a href="#" class="check_btn"><i class="fa-solid fa-bars"></i></a>
+				</div>
+				<div class="navbar__dropdown_menu_container">
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="aboutus.html" class="link">About</a></li>
+					<li><a href="#" class="link">Reviews</a></li>
+					<li><a href="addrestaurant.html" class="link">Add Restaurants</a></li>
+					<li><a href="blog.html" class="link">Blog</a></li>
+					<li><a href="login.html" class="link">Login</a></li>
+					<li><a href="./signup.html" class="link">Sign Up</a></li>
+				</div>
+			</nav>
+		</header>
+		<div class="hero__section_container">
+			<img src="./Images/heroSectionLogo.png" alt="Delish Logo" class="hero__section_logo" />
+			<h1 class="hero__section_heading">Discover the best food & drinks in Ontario</h1>
+			<div class="hero__section_container_input">
+				<i class="fa-sharp fa-solid fa-location-dot" id="location_icon"></i>
+				<select class="hero__section_input_location">
+					<option>Toronto</option>
+					<option>Brampton</option>
+					<option>Mississauga</option>
+					<option>Hamilton</option>
+					<option>Vaughan</option>
+					<option>Markham</option>
+				</select>
+				<i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+				<input class="hero__section_input_search" type="text"
+					placeholder="Search for a restaurant, cuisine or a dish" />
+			</div>
+		</div>
+	</section>
 
     <section class="filter">
         <div class="filter-sec">
