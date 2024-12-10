@@ -439,6 +439,8 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
+    margin-left: 17px;
+    margin-top: 15px;
 }
 
 .carousel-content .main-content .Bname {
