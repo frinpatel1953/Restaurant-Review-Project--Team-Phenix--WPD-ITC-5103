@@ -26,12 +26,22 @@
 					<a href="#" class="link">Reviews</a>
 					<a href="addrestaurant.html" class="link">Add Restaurants</a>
 					<a href="blog.html" class="link">Blog</a>
-					<a href="login.html" class="link">Login</a>
-					<a href="./signup.html" class="link">Sign Up</a>
-					<input type="text" class="search-input" placeholder="Search...">
-					<a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-					<a href="#" class="check_btn"><i class="fa-solid fa-bars"></i></a>
-				</div>
+					<button id="loginBtn" class="login-button">Login</button>
+
+					<div id="loginPopup" class="popup-container">
+						<div class="popup-content">
+						<span class="close-popup" id="closePopup">&times;</span>
+						<iframe src="login.html" frameborder="0" class="iframe-login"></iframe>
+						</div>
+					</div>
+					<button id="signUpBtn" class="signup-button">Sign Up</button>
+
+					<div id="signUpPopup" class="popup-container">
+					<div class="popup-content">
+						<span class="close-signup-popup" id="closeSignUpPopup">&times;</span>
+						<iframe src="signup.html" frameborder="0" class="iframe-signup"></iframe>
+					</div>
+					</div>
 				<div class="navbar__dropdown_menu_container">
 					<li><a href="index.html" class="link">Home</a></li>
 					<li><a href="aboutus.html" class="link">About</a></li>
@@ -625,6 +635,10 @@
 			2008-2023 © Delish™ Ltd. All rights reserved.
 		</div>
 	</footer>
+  <script src="/js/main.js"></script>
+	<script src="/js/popUpLogin.js"></script>
+	<script src="/js/popUpSignUp.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
