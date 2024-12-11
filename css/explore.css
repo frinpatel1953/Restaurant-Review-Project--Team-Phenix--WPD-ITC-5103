@@ -651,6 +651,10 @@ body {
     padding-bottom: 10px;
     color: rgba(0, 0, 0, 0.87);
   }
+
+  .place-link{
+    text-decoration: none;
+  }
   .card .card-description .about-place .place-speciality, .card .card-description .about-place .per-person {
     font-size: 14px;
     color: rgba(128, 128, 128, 0.97);
