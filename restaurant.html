@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delish</title>
+	<link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="/css/restaurant.css">
 	<link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
@@ -17,35 +18,62 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
-            </div>
+    <section class="hero__section">
+		<header>
+			<nav class="navbar">
+				<a href="#">Get the App</a>
+				<div class="navbar__menu_container">
+					<a href="index.html" class="link">Home</a>
+					<a href="aboutus.html" class="link">About</a>
+					<a href="#" class="link">Reviews</a>
+					<a href="addrestaurant.html" class="link">Add Restaurants</a>
+					<a href="blog.html" class="link">Blog</a>
+					<button id="loginBtn" class="login-button">Login</button>
 
-            <div class="nav-search">
-                <div class="add-bar">
-                    <i class="fa-solid fa-location-dot" style="color: #ff828b;"></i>
-                    <input type="text" class="input-add" placeholder="Toronto">
-                    <i class="fa-solid fa-sort-down" style="color: #505050;"></i>
-                </div>
-                <div class="line">
+					<div id="loginPopup" class="popup-container">
+						<div class="popup-content">
+						<span class="close-popup" id="closePopup">&times;</span>
+						<iframe src="login.html" frameborder="0" class="iframe-login"></iframe>
+						</div>
+					</div>
+					<button id="signUpBtn" class="signup-button">Sign Up</button>
 
-                </div>
-                <div class="search-food">
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #939393;"></i>
-                    </div>
-                    <input type="text" class="input-food" placeholder="Search for restaurant, cuisine or a dish ">
-                </div>
-            </div>
-            <div class="user-login">
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
-            </div>
-        </div>
-    </header>
-
+					<div id="signUpPopup" class="popup-container">
+					<div class="popup-content">
+						<span class="close-signup-popup" id="closeSignUpPopup">&times;</span>
+						<iframe src="signup.html" frameborder="0" class="iframe-signup"></iframe>
+					</div>
+					</div>
+				<div class="navbar__dropdown_menu_container">
+					<li><a href="index.html" class="link">Home</a></li>
+					<li><a href="aboutus.html" class="link">About</a></li>
+					<li><a href="#" class="link">Reviews</a></li>
+					<li><a href="addrestaurant.html" class="link">Add Restaurants</a></li>
+					<li><a href="blog.html" class="link">Blog</a></li>
+					<li><a href="login.html" class="link">Login</a></li>
+					<li><a href="./signup.html" class="link">Sign Up</a></li>
+				</div>
+			</nav>
+		</header>
+		<div class="hero__section_container">
+			<img src="./Images/heroSectionLogo.png" alt="Delish Logo" class="hero__section_logo" />
+			<h1 class="hero__section_heading">Discover the best food & drinks in Ontario</h1>
+			<div class="hero__section_container_input">
+				<i class="fa-sharp fa-solid fa-location-dot" id="location_icon"></i>
+				<select class="hero__section_input_location">
+					<option>Toronto</option>
+					<option>Brampton</option>
+					<option>Mississauga</option>
+					<option>Hamilton</option>
+					<option>Vaughan</option>
+					<option>Markham</option>
+				</select>
+				<i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+				<input class="hero__section_input_search" type="text"
+					placeholder="Search for a restaurant, cuisine or a dish" />
+			</div>
+		</div>
+	</section>
 
     <div class="container">
         <div class="header">
