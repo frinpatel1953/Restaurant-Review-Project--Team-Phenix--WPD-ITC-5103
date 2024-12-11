@@ -160,7 +160,9 @@
 
 #artop{
     background-image: url("../public/banners/banner1.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #arnav{
     width: 60%;
