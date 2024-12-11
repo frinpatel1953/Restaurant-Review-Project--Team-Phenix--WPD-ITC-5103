@@ -77,6 +77,7 @@
     color: white;
     border-radius: 10px;
     height: 40px;
+    margin-bottom: 20px;
 }
 .nextbluebutton:hover{
     background-color: rgb(119, 0, 24);

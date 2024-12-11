@@ -13,7 +13,8 @@ body{
 
 /* Hero section */
 .hero__section{
-	background-image: url('../public/banners/banner2.jpg');
+	background-image: url('../public/banners/banner3.jpg');   
+	/* image credit :- unsplash (Annie Spratt) */
 	height: 400px;
 	background-size: cover;
 	background-position: center;
