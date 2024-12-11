@@ -94,6 +94,7 @@ body {
 	background-color: transparent;
 	border: none;
 	color: white;
+    font-size: 17px;
 }
   .login-button:hover {
 	color: blue;
@@ -103,6 +104,7 @@ body {
 	background-color: transparent;
 	border: none;
 	color: white;
+    font-size: 17px;
 }
   .signup-button:hover {
 	color: blue;
@@ -542,7 +544,7 @@ body {
     background-color: #fbe3e4;
     color: #ff4f5a;
     transition: background-color 0.3s, color 0.3s;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .reservation-card button:hover {
@@ -579,11 +581,7 @@ body {
     margin-left: 110px;
     margin-top: 20px;
   }
-  .direction img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
+  
   .direction p {
     font-size: 14px;
     color: #555;
@@ -617,7 +615,7 @@ body {
   }
   
   iframe{
-    width: 300px;
+    width: 250px;
     height: 150px;
   }
 
@@ -808,18 +806,74 @@ body {
 
 /* Media Query for Mobile Phones */
 @media (max-width: 480px) {
-    .navbar {
-        padding: 10px;
-    }
+    .navbar__menu_container .search_icon{
+		display: flex;
+	}
+	.navbar__menu_container .check_btn{
+		display: flex;
+	}
 
-    .nav-search {
+	.navbar__dropdown_menu_container {
+		display: block;
+	}
+	.navbar__menu_container .link{
+		display: none;
+	}
+
+	.search-input {
+        display: none; /* Initially hidden */
+        transition: width 0.3s ease;
+      }
+
+      .navbar__menu_container.active .search-input {
+        display: inline-block;
+        width: 150px;
+        opacity: 1;
+      }
+
+      /* Styling for search and menu icons */
+      .search_icon, .check_btn {
+        display: inline-block;
+        font-size: 20px;
+        color: #555;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+	  .search-input.visible {
+		display: inline-block;
+		width: 150px; /* Adjust width as desired */
+	  }
+
+
+	.hero__section{
+		height: 300px;
+	}
+	.hero__section_container{
         flex-direction: column;
+        background-color: transparent;
         width: 100%;
+		height: calc(300px - 116px);
+    }
+	.hero__section_logo{
+		height: 60px;
+		width: 200px;
+		margin-top: 20px;
+	}
+    .input_container_location, .input_container_search{
+        padding: 18px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .hero__section_heading{
+        font-size: 18px;
+        width: 400px;
     }
 
-    .nav-search .add-bar, .nav-search .search-food {
-        width: 100%;
-    }
+	.hero__section_container_input{
+		display: none;
+	}
+
 
     .user-login {
         flex-direction: column;
@@ -864,13 +918,21 @@ body {
         border: none;
         margin-right: 50px ;
         margin-bottom: 275px;
-        width: 90%;
+        width: 100%;
     }
 
     .reservation-card, .direction-card {
         width: 100%;
         /* margin-left: 0; */
     }
+
+    .reservation{
+        height: 95%;
+    }
+
+    /* .reservation-card button{
+        margin-bottom: 30px;
+    } */
 
     .navigation_container{
 		grid-template-columns: repeat(3, 1fr);
