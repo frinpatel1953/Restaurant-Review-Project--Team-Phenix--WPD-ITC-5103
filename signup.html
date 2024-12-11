@@ -13,18 +13,21 @@
             <div class="signup-header">
                 <h2>Sign up</h2>
             </div>
-            <form action="#">
+            <form action="#" method="POST">
                 <div class="input-group">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" id="full-name" required>
                 </div>
                 <div class="input-group">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" placeholder="Email" id="email" 
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                           title="Please enter a valid email address" 
+                           required>
                 </div>
                 <div class="checkbox-group">
-                    <input type="checkbox" id="terms">
+                    <input type="checkbox" id="terms" required>
                     <label for="terms">I agree to Zomato's <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a> and <a href="#">Content Policies</a></label>
                 </div>
-                <button type="submit" class="btn create-btn" disabled>Create account</button>
+                <button type="submit" class="btn create-btn">Create account</button>
                 <div class="divider">
                     <span>or</span>
                 </div>

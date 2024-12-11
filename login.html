@@ -13,15 +13,17 @@
             <div class="login-header">
                 <h2>Login</h2>
             </div>
-            <form action="#">
+            <form action="#" method="POST">
                 <div class="input-group">
                     <div class="country-code">
                         <img src="https://flagcdn.com/16x12/ca.png" alt="Canada Flag">
-                        <select id="country-code">
+                        <select id="country-code" required>
                             <option value="+1">+1</option>
                         </select>
                     </div>
-                    <input type="text" placeholder="Phone" id="phone" required>
+                    <input type="tel" placeholder="Phone" id="phone" 
+                           pattern="\d{10}" title="Please enter a valid 10-digit phone number" 
+                           required>
                 </div>
                 
                 <button type="submit" class="btn primary-btn">Send One Time Password</button>
@@ -30,7 +32,7 @@
                     <span>or</span>
                 </div>
                 
-                <button class="btn email-btn">
+                <button type="button" class="btn email-btn">
                     <span class="email-icon">📧</span> Continue with Email
                 </button>
                 
