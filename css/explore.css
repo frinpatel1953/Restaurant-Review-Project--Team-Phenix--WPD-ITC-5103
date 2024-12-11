@@ -146,24 +146,19 @@ body {
     color: #82828263;
 }
 
-.login-button {
+#loginBtnNormal {
 	background-color: transparent;
 	border: none;
 	color: white;
     font-size: 17px;
-}
-  .login-button:hover {
-	color: blue;
 }
 
-.signup-button {
+
+#signUpBtnNormal {
 	background-color: transparent;
 	border: none;
 	color: white;
     font-size: 17px;
-}
-  .signup-button:hover {
-	color: blue;
 }
 
 
