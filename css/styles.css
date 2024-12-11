@@ -101,9 +101,10 @@ body{
 	justify-content: center;
 }
 
-.login-button {
+.link {
 	background-color: transparent;
 	border: none;
+	background-color: transparent;
 	color: white;
 }
   .login-button:hover {

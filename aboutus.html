@@ -43,22 +43,9 @@
 					<a href="aboutus.html" class="link">About</a>
 					<a href="#" class="link">Reviews</a>
 					<a href="addrestaurant.html" class="link">Add Restaurants</a>
-					<a href="blog.html" class="link">Blog</a>
-					<button id="loginBtn" class="login-button">Login</button>
-
-					<div id="loginPopup" class="popup-container">
-						<div class="popup-content">
-						<span class="close-popup" id="closePopup">&times;</span>
-						<iframe src="login.html" frameborder="0" class="iframe-login"></iframe>
-						</div>
-					</div>
-					<button id="signUpBtn" class="signup-button">Sign Up</button>
-
-					<div id="signUpPopup" class="popup-container">
-					<div class="popup-content">
-						<span class="close-signup-popup" id="closeSignUpPopup">&times;</span>
-						<iframe src="signup.html" frameborder="0" class="iframe-signup"></iframe>
-					</div>
+					<a href="#" class="link">Blog</a>
+					<button id="loginBtnNormal" class="link">Login</button>
+					<button id="signUpBtnNormal" class="link">Sign Up</button>
 					<input type="text" class="search-input" placeholder="Search...">
 					<a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
 					<a href="#" class="check_btn"><i class="fa-solid fa-bars"></i></a>
@@ -68,12 +55,26 @@
 					<li><a href="aboutus.html" class="link">About</a></li>
 					<li><a href="#" class="link">Reviews</a></li>
 					<li><a href="addrestaurant.html" class="link">Add Restaurants</a></li>
-					<li><a href="blog.html" class="link">Blog</a></li>
-					<li><a href="login.html" class="link">Login</a></li>
-					<li><a href="./signup.html" class="link">Sign Up</a></li>
+					<li><a href="#" class="link">Blog</a></li>
+					<li><button id="loginBtnDropdown" class="link">Login</button></li>
+					<li><button id="signUpBtnDropdown" class="link">Sign Up</button></li>
 				</div>
 			</nav>
 		</header>
+		<!-- Popups -->
+<div id="loginPopup" class="popup-container">
+<div class="popup-content">
+	<span class="close-popup" id="closePopup">&times;</span>
+	<iframe src="login.html" frameborder="0" class="iframe-login"></iframe>
+</div>
+</div>
+
+<div id="signUpPopup" class="popup-container">
+<div class="popup-content">
+	<span class="close-signup-popup" id="closeSignUpPopup">&times;</span>
+	<iframe src="signup.html" frameborder="0" class="iframe-signup"></iframe>
+</div>
+</div>
 		<div class="hero__section_container">
 			<img src="./Images/heroSectionLogo.png" alt="Delish Logo" class="hero__section_logo" />
 			<h1 class="hero__section_heading">Discover Who we are and What we do</h1>

@@ -45,8 +45,8 @@
 					<a href="#" class="link">Reviews</a>
 					<a href="addrestaurant.html" class="link">Add Restaurants</a>
 					<a href="#" class="link">Blog</a>
-					<a href="login.html" class="link">Login</a>
-					<a href="./signup.html" class="link">Sign Up</a>
+					<button id="loginBtnNormal" class="link">Login</button>
+					<button id="signUpBtnNormal" class="link">Sign Up</button>
 					<input type="text" class="search-input" placeholder="Search...">
 					<a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
 					<a href="#" class="check_btn"><i class="fa-solid fa-bars"></i></a>
@@ -57,11 +57,25 @@
 					<li><a href="#" class="link">Reviews</a></li>
 					<li><a href="addrestaurant.html" class="link">Add Restaurants</a></li>
 					<li><a href="#" class="link">Blog</a></li>
-					<li><a href="login.html" class="link">Login</a></li>
-					<li><a href="./signup.html" class="link">Sign Up</a></li>
+					<li><button id="loginBtnDropdown" class="link">Login</button></li>
+					<li><button id="signUpBtnDropdown" class="link">Sign Up</button></li>
 				</div>
 			</nav>
 		</header>
+		<!-- Popups -->
+<div id="loginPopup" class="popup-container">
+<div class="popup-content">
+	<span class="close-popup" id="closePopup">&times;</span>
+	<iframe src="login.html" frameborder="0" class="iframe-login"></iframe>
+</div>
+</div>
+
+<div id="signUpPopup" class="popup-container">
+<div class="popup-content">
+	<span class="close-signup-popup" id="closeSignUpPopup">&times;</span>
+	<iframe src="signup.html" frameborder="0" class="iframe-signup"></iframe>
+</div>
+</div>
 		<div class="hero__section_container">
 			<img src="./Images/heroSectionLogo.png" alt="Delish Logo" class="hero__section_logo" />
 			<h1 class="hero__section_heading">Discover the best conversations on food & drinks</h1>
@@ -89,7 +103,7 @@
             alt="Blog Image">
 			<!-- credit :- pexels -->
           <div class="card-content">
-            <p class="post-date">Mar 22, 2023 • 2 min read</p>
+            <p class="post-date">Mar 22, 2024 • 2 min read</p>
             <h2 class="post-title">Outdoor cooking hacks</h2>
             <p class="post-description">Create a blog post subtitle that summarizes your post in a few short...</p>
             <div class="post-meta">
@@ -241,6 +255,8 @@
 		</div>
 	</footer>
 	<script src="/js/main.js"></script>
+	<script src="/js/popUpLogin.js"></script>
+	<script src="/js/popUpSignUp.js"></script>
 </body>
 
 </html>
